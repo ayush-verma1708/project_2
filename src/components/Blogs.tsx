@@ -29,7 +29,9 @@ export default function Blogs() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('http://localhost:3001/fetch-blogs');
+        const response = await fetch(
+          'https://backend-medium.onrender.com/fetch-blogs'
+        );
         if (!response.ok) throw new Error('Failed to fetch blogs');
 
         const xmlText = await response.text();
