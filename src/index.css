@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+}
+
+.nav-blur {
+  @apply bg-white/80 dark:bg-[#0a192f]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+}

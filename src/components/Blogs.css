@@ -1,0 +1,109 @@
+/* Ensure body takes up full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Blogs container */
+.blogs-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.blogs-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.first-blog {
+  height: 50vh; /* First blog takes up half the viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.blog-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.blog-snippet {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.blog-snippet.collapsed {
+  display: none;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  color: #00ab6b;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.medium-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+/* For collapsible snippet, use the following styles to toggle visibility */
+.blogs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-content {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.blog-content p {
+  margin-bottom: 15px;
+}
+
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+}
